@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage";
 function App()
 {
   return (
-    <div className="text-black bg-gray-200">
+    <div className="text-black bg-white">
       {/* <TranslatorComponent></TranslatorComponent> */}
       {/* <TranslatorTwo></TranslatorTwo> */}
       <NavBar />
