@@ -1,17 +1,24 @@
-/* eslint-disable no-unused-vars */
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom"
 import "./App.css";
 import TranslatorComponent from "./components/Translator";
+import TranslatorTwo from "./components/TranslatorTwo";
+import NavBar from "./components/NavBar/NavBar";
+import HomePage from "./pages/HomePage";
 
 function App()
 {
   return (
-    <>
-      <TranslatorComponent></TranslatorComponent>
-      <div className="">Hiii</div>
-    </>
+    <div className="text-black bg-gray-200">
+      {/* <TranslatorComponent></TranslatorComponent> */}
+      {/* <TranslatorTwo></TranslatorTwo> */}
+      <NavBar />
+
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </div>
   );
 }
 
