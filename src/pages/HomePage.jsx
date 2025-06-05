@@ -2,7 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import React, { useState } from "react";
 
-const CareerPage = () =>
+const HomePage = () =>
 {
   const [typingDone, setTypingDone] = useState(false);
   return (
@@ -29,4 +29,4 @@ const CareerPage = () =>
   );
 };
 
-export default CareerPage;
+export default HomePage;

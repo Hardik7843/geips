@@ -1,6 +1,8 @@
+import React from "react";
 import { navlinks } from "../../config/navConfig";
 import NavLink from "./NavLink";
 
+// eslint-disable-next-line react/prop-types
 const SideBar = ({ handleClose }) =>
 {
   return (

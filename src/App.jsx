@@ -5,6 +5,7 @@ import TranslatorComponent from "./components/Translator";
 import TranslatorTwo from "./components/TranslatorTwo";
 import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./pages/HomePage";
+import HomePage2 from "./pages/HomePage2";
 
 function App()
 {
@@ -16,7 +17,7 @@ function App()
 
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage2 />} />
       </Routes>
     </div>
   );
