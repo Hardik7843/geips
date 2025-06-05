@@ -8,29 +8,20 @@ import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 // import { Menu, X } from "lucide-react";
 
-const NavBar = () =>
-{
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleMobileNavBar = (
-    e,
-    state
-  ) =>
-  {
+  const handleMobileNavBar = (e, state) => {
     setIsOpen(state);
   };
 
   return (
-    <nav className="border border-black fixed top-0 left-0 right-0 z-10 text-black bg-white backdrop-blur-md">
+    <nav className="border border-black fixed top-0 left-0 right-0 z-10 text-black bg-white/30 backdrop-blur-md">
       <div className="flex items-center justify-between mx-auto p-4 max-w-7xl">
         {/* Left side: Logo + Text */}
         <div className="flex items-center space-x-3">
           <a href="/" className="flex flex-col items-start space-x-3">
             <img src={logo} alt="LOGO" width={80} height={80} />
-            {/* <div className="  font-mono leading-tight text-sm">
-              <p className="font-semibold font-sans">We Bring Service to Life..</p>
-              <p className="font-semibold font-sans"></p>
-            </div> */}
           </a>
         </div>
 
