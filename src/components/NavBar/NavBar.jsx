@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import NavLink from "./NavLink";
 import SideBar from "./SideBar";
@@ -30,9 +31,30 @@ const NavBar = () => {
           {/* Desktop Nav */}
           <div className="hidden lg:block">
             <ul className="flex space-x-8 font-medium">
-              {navlinks.map((nav, index) => (
-                <NavLink name={nav.name} path={nav.path} key={index} />
-              ))}
+              <li>
+                <a
+                  href={"/about"}
+                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                >
+                  About G.E.I.P.S
+                </a>
+              </li>
+              <li>
+                <a
+                  href={"/#courses"}
+                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                >
+                  Our Courses
+                </a>
+              </li>
+              <li>
+                <a
+                  href={"/#career"}
+                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                >
+                  Career
+                </a>
+              </li>
             </ul>
           </div>
 
