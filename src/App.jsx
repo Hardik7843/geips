@@ -4,9 +4,8 @@ import "./App.css";
 import TranslatorComponent from "./components/Translator";
 import TranslatorTwo from "./components/TranslatorTwo";
 import NavBar from "./components/NavBar/NavBar";
-import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import HomePage2 from "./pages/HomePage2";
-import HeroPage from "./pages/HeroPage";
 
 function App() {
   return (
@@ -16,8 +15,8 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<HeroPage />} />
-        <Route path="/about" element={<HomePage2 />} />
+        <Route path="/" element={<HomePage2 />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </div>
   );
