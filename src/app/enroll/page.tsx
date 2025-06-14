@@ -3,9 +3,9 @@
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { Input, Radio, DatePicker, Button, RadioChangeEvent } from "antd";
-import dayjs, { Dayjs } from "dayjs";
 import { sendBookingEnquiry } from "@/actions/bookDemo";
 import toast from "react-hot-toast";
+import dayjs, { Dayjs } from "dayjs";
 
 type Course = "GNM" | "Paramedical";
 
@@ -56,9 +56,25 @@ const CourseEnrollForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     toast.loading("Sending...", { id: "send" });
+    const now = new Date();
+    const enquiryDate = now.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
+    const enquiryTime = now.toLocaleTimeString("en-IN", {
+      timeZone: "IST",
+      timeZoneName: "shortGeneric",
+    });
+
     try {
+      const result = await sendBookingEnquiry({
+        ...formData,
+        enquiryDate,
+        enquiryTime,
+      });
       toast.dismiss("send");
-      const result = await sendBookingEnquiry(formData);
       console.log("✅ Submitted:", result);
       toast.success("Enquiry sent successfully!");
       // alert('Enrollment submitted!');
