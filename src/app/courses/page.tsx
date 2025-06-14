@@ -129,7 +129,7 @@ const CourseTimeline: React.FC = () => {
           >
             <h3 className="font-semibold text-lg">Get your Enrollment</h3>
 
-            <div className="border flex">
+            <div className=" flex">
               <Link
                 href={"/enroll"}
                 className=" text-white px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"
