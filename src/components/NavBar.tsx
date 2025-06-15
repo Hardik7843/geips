@@ -10,6 +10,7 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,10 +32,34 @@ const NavBar = () => {
             </Link>
           </div>
 
+          <div>
+            <h2 className="hidden lg:block lg:text-xl xl:text-2xl font-bold text-blue-400">
+              <TypeAnimation
+                sequence={["Global Institute of Paramedical Science"]}
+                wrapper="span"
+                speed={80}
+                cursor={false}
+                repeat={0}
+              />
+            </h2>
+          </div>
+
           <div className="lg:hidden">
             <Link href="/" className=" flex flex-col items-start space-x-3">
               <Image src={logo} alt="LOGO" width={50} height={50} />
             </Link>
+          </div>
+
+          <div>
+            <h2 className="hidden sm:block lg:hidden sm:text-md md:text-lg font-bold text-blue-400">
+              <TypeAnimation
+                sequence={["Global Institute of Paramedical Science"]}
+                wrapper="span"
+                speed={80}
+                cursor={false}
+                repeat={0}
+              />
+            </h2>
           </div>
         </div>
 

@@ -13,6 +13,7 @@ import skillIcon from "@/../public/skillsAndKnowledge.svg";
 import doctorIcon from "@/../public/sthethscope.svg";
 import WhyUsCard from "@/components/WhyUsCard";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HomePage2 = () => {
   const shortIntro =
@@ -59,10 +60,23 @@ const HomePage2 = () => {
   };
 
   return (
-    <div className="text-black min-h-[60vh] scroll-mt-[80px] mt-30">
-      <div className="px-10 md:text-2xl font-extrabold font-serif mb-3">
-        Global Educational Institute of Paramedical Sciences
+    <div className="text-black min-h-[60vh] scroll-mt-[80px] mt-22 lg:mt-30">
+      <div className="px-10 mb-3">
+        <h2 className="sm:hidden text-md font-bold text-blue-400">
+          <TypeAnimation
+            sequence={[
+              "Global Institute of Paramedical Science",
+              // () => setTypingDone(true),
+            ]}
+            wrapper="span"
+            speed={80}
+            cursor={false}
+            repeat={0}
+          />
+          {/*  */}
+        </h2>
       </div>
+
       <div className="px-10 borde w-full flex flex-col md:flex-row gap-x-4">
         {/* Image - Slide from Left */}
         <motion.div
