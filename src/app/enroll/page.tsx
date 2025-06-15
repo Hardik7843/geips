@@ -2,7 +2,15 @@
 "use client";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { Input, Radio, DatePicker, Button, RadioChangeEvent } from "antd";
+import {
+  Input,
+  Radio,
+  DatePicker,
+  Button,
+  RadioChangeEvent,
+  Checkbox,
+  CheckboxChangeEvent,
+} from "antd";
 import { sendBookingEnquiry } from "@/actions/bookDemo";
 import toast from "react-hot-toast";
 import dayjs, { Dayjs } from "dayjs";
@@ -15,8 +23,11 @@ interface FormData {
   email: string;
   course: Course;
   dob: string; // formatted as "DD-MMM-YYYY"
-  tenthPercent: string;
-  twelfthPercent: string;
+  // tenthPercent: string;
+  // twelfthPercent: string;
+  tenth: string;
+  twelfth: string;
+  graduate: string;
 }
 
 const CourseEnrollForm: React.FC = () => {
@@ -26,8 +37,12 @@ const CourseEnrollForm: React.FC = () => {
     email: "",
     course: "GNM",
     dob: "",
-    tenthPercent: "",
-    twelfthPercent: "",
+    // tenthPercent: "",
+    // twelfthPercent: "",
+
+    tenth: "N-A",
+    twelfth: "N-A",
+    graduate: "N-A",
   });
 
   const handleChange =
@@ -50,6 +65,13 @@ const CourseEnrollForm: React.FC = () => {
     setFormData((prev) => ({
       ...prev,
       course: e.target.value,
+    }));
+  };
+
+  const handleCheckboxChange = (field: string) => (e: CheckboxChangeEvent) => {
+    setFormData((prev) => ({
+      ...prev,
+      [field]: e.target.checked ? "Passed" : "N-A",
     }));
   };
 
@@ -113,16 +135,6 @@ const CourseEnrollForm: React.FC = () => {
           type="email"
         />
 
-        <label className="text-sm">Course</label>
-        <Radio.Group
-          value={formData.course}
-          onChange={(e) => handleChangeSubject(e)}
-          className="flex gap-4"
-        >
-          <Radio value="GNM">GNM</Radio>
-          <Radio value="Paramedical">Paramedical</Radio>
-        </Radio.Group>
-
         <label className="text-sm">Date of Birth</label>
         <DatePicker
           required
@@ -133,21 +145,39 @@ const CourseEnrollForm: React.FC = () => {
           className="w-full"
         />
 
-        <label className="text-sm">10th Percentage (%)</label>
-        <Input
-          required
-          value={formData.tenthPercent}
-          onChange={handleChange("tenthPercent")}
-          className="rounded-md"
-        />
+        <label className="text-sm">Course</label>
+        <Radio.Group
+          value={formData.course}
+          onChange={(e) => handleChangeSubject(e)}
+          className="flex gap-4"
+        >
+          <Radio value="GNM">GNM</Radio>
+          <Radio value="Paramedical">Paramedical</Radio>
+        </Radio.Group>
 
-        <label className="text-sm">12th Percentage (%)</label>
-        <Input
-          required
-          value={formData.twelfthPercent}
-          onChange={handleChange("twelfthPercent")}
-          className="rounded-md"
-        />
+        <label className="text-sm mb-1 block">Qualifications</label>
+        <div className="flex flex-col gap-2 ml-2">
+          <Checkbox
+            checked={formData.tenth === "Passed" ? true : false}
+            onChange={handleCheckboxChange("tenth")}
+          >
+            10th Pass
+          </Checkbox>
+
+          <Checkbox
+            checked={formData.twelfth === "Passed" ? true : false}
+            onChange={handleCheckboxChange("twelfth")}
+          >
+            12th Pass
+          </Checkbox>
+
+          <Checkbox
+            checked={formData.graduate === "Passed" ? true : false}
+            onChange={handleCheckboxChange("graduate")}
+          >
+            Graduate
+          </Checkbox>
+        </div>
 
         <Button
           type="primary"

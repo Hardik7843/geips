@@ -134,7 +134,7 @@ const CourseTimeline: React.FC = () => {
                 href={"/enroll"}
                 className=" text-white px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"
               >
-                Enroll
+                ENROLL
               </Link>
             </div>
           </VerticalTimelineElement>
