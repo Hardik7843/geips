@@ -1,8 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
 /* eslint-disable no-unused-vars */
 import React from "react";
 import chairMen from "@/../public/Person/chairMen.png";
 import director from "@/../public/Person/director.png";
 import Desk, { DeskProps } from "@/components/ManagementDesks/Desk";
+import SectionHead from "@/components/SectionHead";
+import { motion } from "framer-motion";
+import visionPhoto from "@/../public/Person/Vision.png";
+import Image from "next/image";
 
 const AboutPage: React.FC = () => {
   const desk1Data: DeskProps = {
@@ -34,6 +40,23 @@ const AboutPage: React.FC = () => {
     // regards: "When God Guides, He Provides",
   };
 
+  const listVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const ourVisionText =
+    "To Impart Nursing Education to the best of our ability for our community with quaity education and innovative healthcare as per the demand of this changing world, so as our students are always upgraded with new technique and methods practice in the nursing tield.";
+
   return (
     <div className="text-black min-h-[60vh] scroll-mt-[80px] mt-30">
       {/* Pass everything at once */}
@@ -48,7 +71,56 @@ const AboutPage: React.FC = () => {
       <div className="px-10 borde">
         <Desk {...desk2Data} />
       </div>
-      {/* </section> */}
+
+      <div className="border px-10">
+        <SectionHead title="Our Vision" />
+
+        <div className="sm:px-5 borde w-full flex flex-col md:flex-row gap-x-4">
+          {/* Image - Slide from Left */}
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="w-full relative aspect-video rounded-2xl border-black border-2 mt-2"
+          >
+            <Image
+              src={visionPhoto}
+              alt="person"
+              className="object-cover rounded-2xl"
+              fill
+              // style={{ objectFit: "cover" }}
+            />
+          </motion.div>
+
+          {/* Text and points - Slide from Right */}
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="w-full md:w-[3/5] borde break-words text-justify mt-2"
+          >
+            <p className="w-full">{ourVisionText}</p>
+
+            {/* <div className="w-full flex flex-col items-start text-black mt-4">
+              <p>Meaningful Outcomes for Professional & Career Growth</p>
+
+           
+              <motion.ol
+                className="list-disc text-blue-600 space-y-2 pl-6"
+                initial="hidden"
+                animate="visible"
+                variants={listVariants}
+              >
+                {outComes.map((point, index) => (
+                  <motion.li key={index} variants={itemVariants}>
+                    {point}
+                  </motion.li>
+                ))}
+              </motion.ol>
+            </div> */}
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 };

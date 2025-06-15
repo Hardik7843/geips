@@ -78,14 +78,14 @@ const CourseTimeline: React.FC = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-fit relative aspect-video rounded-2xl borde-2"
+            className="w-full relative aspect-video rounded-2xl border-black border-2 mt-2"
           >
             <Image
               src={nursesPhoto}
               alt="person"
-              className="object-contain rounded-2xl"
+              className="object-cover rounded-2xl"
               fill
-              style={{ objectFit: "contain" }}
+              // style={{ objectFit: "cover" }}
             />
           </motion.div>
 
@@ -94,7 +94,7 @@ const CourseTimeline: React.FC = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-[3/5] borde break-words text-justify"
+            className="w-full md:w-[3/5] borde break-words text-justify mt-2"
           >
             <p className="w-full">{shortIntro}</p>
 
@@ -129,7 +129,7 @@ const CourseTimeline: React.FC = () => {
           >
             <h3 className="font-semibold text-lg">Get your Enrollment</h3>
 
-            <div className=" flex">
+            <div className="borde flex">
               <Link
                 href={"/enroll"}
                 className=" text-white px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"

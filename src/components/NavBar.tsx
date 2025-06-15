@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 "use client";
 import React from "react";
@@ -8,7 +9,7 @@ import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -69,6 +70,30 @@ const NavBar = () => {
             </ul>
           </div>
 
+          <div className="borde">
+            <motion.div
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            >
+              <Link
+                href={"/enroll"}
+                className="text-white px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"
+              >
+                Enroll
+              </Link>
+            </motion.div>
+            {/* <Link
+              href={"/enroll"}
+              className=" text-white px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"
+            >
+              Enroll
+            </Link> */}
+          </div>
           {/* <div>
             <Link
               href={"/bookdemo"}
