@@ -9,6 +9,6 @@ export const navlinks = [
   },
   {
     name: "Career",
-    path: "/#",
+    path: "/career",
   },
 ];
