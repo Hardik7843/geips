@@ -65,7 +65,7 @@ const HomePage2 = () => {
         <h2 className="sm:hidden text-md font-bold text-blue-400">
           <TypeAnimation
             sequence={[
-              "Global Institute of Paramedical Science",
+              "Global Education Institute of Paramedical Science",
               // () => setTypingDone(true),
             ]}
             wrapper="span"

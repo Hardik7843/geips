@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Global Institute of Paramedical Science",
+  title: "Global Education Institute of Paramedical Science",
   description: "Made by Raibo Infotech",
 };
 
