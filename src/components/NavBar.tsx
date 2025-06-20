@@ -33,9 +33,9 @@ const NavBar = () => {
           </div>
 
           <div>
-            <h2 className="hidden lg:block lg:text-xl xl:text-2xl font-bold text-blue-400">
+            <h2 className="hidden lg:block lg:text-xl xl:text-[27px] font-bold text-blue-400">
               <TypeAnimation
-                sequence={["Global Institute of Paramedical Science"]}
+                sequence={["Global Education Institute of Paramedical Science"]}
                 wrapper="span"
                 speed={80}
                 cursor={false}
@@ -51,9 +51,9 @@ const NavBar = () => {
           </div>
 
           <div>
-            <h2 className="hidden sm:block lg:hidden sm:text-md md:text-lg font-bold text-blue-400">
+            <h2 className="hidden sm:block lg:hidden sm:text-md md:text-xl font-bold text-blue-400">
               <TypeAnimation
-                sequence={["Global Institute of Paramedical Science"]}
+                sequence={["Global Education Institute of Paramedical Science"]}
                 wrapper="span"
                 speed={80}
                 cursor={false}

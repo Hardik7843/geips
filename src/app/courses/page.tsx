@@ -64,7 +64,7 @@ const CourseTimeline: React.FC = () => {
   return (
     <div className="text-black min-h-[60vh] scroll-mt-[80px] mt-30">
       <div className="px-10 mb-3">
-        <h2 className="text-3xl font-bold mb-8 text-blue-400">
+        <h2 className="text-lg sm:text-md md:text-xl font-bold mb-8 text-blue-400">
           Design Your Success Story with GNM
         </h2>
       </div>
