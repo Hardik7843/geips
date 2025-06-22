@@ -17,7 +17,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HomePage2 = () => {
   const shortIntro =
-    "An autonomous institution established in the year 2021 with the strength of 10 students for paramedical course. The journey was begun with 2 faculty in the field of imparting nursing education and paramedical training. It was a 2 tier system of Authorization. All India Council for Paramedical & Vocational from New Delhi";
+    "An autonomous institution established in the year 2021 with the strength of 10 students for paramedical course. The journey was began with 2 faculty in the field of imparting nursing education and paramedical training. It was a 2 tier system of Authorization. All India Council for Paramedical & Vocational from New Delhi";
 
   const typesOfStreams = [
     "Nursing Assistant",
@@ -42,7 +42,7 @@ const HomePage2 = () => {
     "Lowest Fees in Mumbai with Limited 50 Seats per Batch",
     "No Extra Charges for Study Material",
     "Scholarship Gov. and Inhouse",
-    "Online (Mon.-Fri.) & Offline Format of Lectures (Sat.-Sun.) with Practicals",
+    "Online & Offline Format of Lectures with Practicals",
   ];
 
   const listVariants = {

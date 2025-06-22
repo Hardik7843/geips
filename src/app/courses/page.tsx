@@ -24,16 +24,16 @@ const CourseTimeline: React.FC = () => {
   const course: Record<number, string[]> = {
     1: [
       "Anatomy, Physiology & Microbiology",
-      "Community Health Nursing Paper - 1",
+      "Community Health Nursing Paper - I",
       "Fundamental of Nursing",
       "Sociology & Psychology",
     ],
     2: [
-      "Medical Surgical Paper - 1 & 2",
+      "Medical Surgical Paper - I & II",
       "Psychiatric Nursing",
       "Paediatric Nursing",
     ],
-    3: ["Community Health Nursing - 2", "Midwifery & Gynaecology Nursing"],
+    3: ["Community Health Nursing - II", "Midwifery & Gynaecology Nursing"],
   };
 
   const listVariants = {

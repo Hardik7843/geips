@@ -33,7 +33,7 @@ const NavBar = () => {
           </div>
 
           <div>
-            <h2 className="hidden lg:block lg:text-xl xl:text-[27px] font-bold text-blue-400">
+            <h2 className="hidden lg:block lg:text-xl xl:text-[28px] font-bold text-blue-400">
               <TypeAnimation
                 sequence={["Global Education Institute of Paramedical Science"]}
                 wrapper="span"
