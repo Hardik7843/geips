@@ -64,14 +64,14 @@ const NavBar = () => {
         </div>
 
         {/* Right side: Nav links (desktop) + Mobile menu */}
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-5">
           {/* Desktop Nav */}
           <div className="hidden lg:block">
-            <ul className="flex space-x-8 font-medium">
+            <ul className="flex space-x-3 font-medium">
               <li>
                 <Link
                   href={"/about"}
-                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                  className="block font-normal py-2   text-gray-600 lg:text-[15px] rounded md:p-0 hover:text-black"
                 >
                   About G.E.I.P.S
                 </Link>
@@ -79,7 +79,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href={"/courses"}
-                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                  className="block font-normal py-2   text-gray-600 lg:text-[15px] rounded md:p-0 hover:text-black"
                 >
                   Our Courses
                 </Link>
@@ -87,9 +87,17 @@ const NavBar = () => {
               <li>
                 <Link
                   href={"/career"}
-                  className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
+                  className="block font-normal py-2   text-gray-600 lg:text-[15px] rounded md:p-0 hover:text-black"
                 >
                   Career
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"/gallary"}
+                  className="block font-normal py-2   text-gray-600 lg:text-[15px] rounded md:p-0 hover:text-black"
+                >
+                  Image Gallary
                 </Link>
               </li>
             </ul>

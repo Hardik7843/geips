@@ -11,4 +11,8 @@ export const navlinks = [
     name: "Career",
     path: "/career",
   },
+  {
+    name: "Image Gallary",
+    path: "/gallary",
+  },
 ];

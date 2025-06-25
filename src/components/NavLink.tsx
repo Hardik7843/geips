@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type NavLinkProps = {
@@ -8,12 +9,12 @@ type NavLinkProps = {
 const NavLink: React.FC<NavLinkProps> = ({ name, path }) => {
   return (
     <li>
-      <a
+      <Link
         href={path}
         className="block font-normal py-2 pl-3 pr-4 text-gray-600 sm:text-xl rounded md:p-0 hover:text-black"
       >
         {name}
-      </a>
+      </Link>
     </li>
   );
 };
