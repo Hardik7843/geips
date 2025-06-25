@@ -56,32 +56,32 @@ const galleryImages = [
   },
   {
     id: 11,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Coral reef",
   },
   {
     id: 12,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Sand dunes",
   },
   {
     id: 13,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Prairie landscape",
   },
   {
     id: 14,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Lone tree",
   },
   {
     id: 15,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Forest path",
   },
   {
     id: 16,
-    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5fThovMOAKc25JoBaqIZsMexdNbhPglTfnHyjF",
+    src: "https://vlt6otqx2w.ufs.sh/f/HlfNHW9XZQ5f6wWPbbmaI9eTNblhixkq3wpRQ4zUJOdcoDg6",
     alt: "Farmland",
   },
 ];
