@@ -138,7 +138,7 @@ export default function Home() {
               <ImageGallery images={eventsImages} />
             </div>
             <div>
-              <SectionHead title="Graduation" />
+              <SectionHead title="Convocation Ceremony" />
               <ImageGallery images={graduationImages} />
             </div>
             <div>
