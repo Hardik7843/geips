@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-"use client";
+// "use client";
 
 import ImageGallery from "@/components/Gallary/GallarImage";
 import SectionHead from "@/components/SectionHead";
