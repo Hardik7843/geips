@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
         <Desk {...desk2Data} />
       </div>
 
-      <div className="border px-10">
+      <div className=" px-10">
         <SectionHead title="Our Vision" />
 
         <div className="sm:px-5 borde w-full flex flex-col md:flex-row gap-x-4">
