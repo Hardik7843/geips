@@ -34,37 +34,37 @@ const Footer = () => {
             <nav className="space-y-2">
               <Link
                 href="/"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 About GEIPS
               </Link>
               <Link
                 href="/courses"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Our Courses
               </Link>
               <Link
                 href="/career"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Career
               </Link>
               <Link
                 href="/gallery"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Image Gallery
               </Link>
               <Link
                 href="/enroll"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Enroll Now
               </Link>
@@ -79,37 +79,37 @@ const Footer = () => {
             <nav className="space-y-2">
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Nursing Assistant
               </Link>
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 OT Technicians
               </Link>
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Medical Lab Technology (DMLT)
               </Link>
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 Dialysis Technology
               </Link>
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 MRI/CT Scan Technician
               </Link>
               <Link
                 href="#"
-                className="block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
+                className="w-fit block text-footer-muted hover:text-primary transition-colors duration-200 text-sm"
               >
                 X-ray Technician
               </Link>
@@ -125,9 +125,11 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div className="text-footer-muted text-sm leading-relaxed">
-                  Global Education Institute of Paramedical Science,
+                  Shantinath shopping center, shop 9\40 2nd floor,
                   <br />
-                  Malad (East), Mumbai, India
+                  SV road beside balaji restaurant
+                  <br />
+                  Malad (West) 400064, Mumbai, India
                 </div>
               </div>
 
@@ -138,7 +140,7 @@ const Footer = () => {
                     href="tel:+911234567890"
                     className="hover:text-primary transition-colors duration-200"
                   >
-                    +91 12345 67890
+                    +91 73048 65484
                   </Link>
                 </div>
               </div>
@@ -150,7 +152,7 @@ const Footer = () => {
                     href="mailto:info@geips.edu"
                     className="hover:text-primary transition-colors duration-200"
                   >
-                    info@geips.edu
+                    info@geips.org
                   </Link>
                 </div>
               </div>
